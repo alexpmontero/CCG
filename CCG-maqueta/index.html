@@ -61,6 +61,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 "
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/vegas.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -118,7 +119,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       </div>
     </header>
     <main class="wrapper_main">
-      <section class="sec_welcome">
+      <section class="sec_welcome" id="bg_vegas" style="background-image: url('./imgs/wallpapers/wallpaper_contacto.jpg')">
         <div class="container-xl">
           <div class="content_welcome">
             <h4 class="mb-0 fw-normal">
@@ -304,25 +305,37 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </div>
           </div>
           <div class="content_items_services">
-            <article class="item_services trans">
+            <article
+              class="item_services trans"
+              style="background-image: url('./imgs/bg_portada.png')"
+            >
               <h3>Ferretería y Tlapalería</h3>
               <a href="#" class="is_more"
                 >Conoce más <i class="ri-arrow-right-circle-fill"></i
               ></a>
             </article>
-            <article class="item_services trans">
+            <article
+              class="item_services trans"
+              style="background-image: url('./imgs/bg_portada.png')"
+            >
               <h3>Vacunas</h3>
               <a href="#" class="is_more"
                 >Conoce más <i class="ri-arrow-right-circle-fill"></i
               ></a>
             </article>
-            <article class="item_services trans">
+            <article
+              class="item_services trans"
+              style="background-image: url('./imgs/bg_portada.png')"
+            >
               <h3>Alimentos y Suplementos</h3>
               <a href="#" class="is_more"
                 >Conoce más <i class="ri-arrow-right-circle-fill"></i
               ></a>
             </article>
-            <article class="item_services trans">
+            <article
+              class="item_services trans"
+              style="background-image: url('./imgs/bg_portada.png')"
+            >
               <h3>Herbicidas</h3>
               <a href="#" class="is_more"
                 >Conoce más <i class="ri-arrow-right-circle-fill"></i
@@ -431,9 +444,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         style="background-image: url('./imgs/bg_visual.png')"
       >
         <div class="content_visual_home">
-          <h2 class=" mb-4">
-            Cooperativa de Consumo “Ganaderos”, S.C.L.
-          </h2>
+          <h2 class="mb-4">Cooperativa de Consumo “Ganaderos”, S.C.L.</h2>
           <p><a href="#" class="btn_outlined">Contáctanos</a></p>
         </div>
       </section>
@@ -504,6 +515,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
       crossorigin="anonymous"
     ></script>
+    <script src="./js/vegas.min.js"></script>
 
     <script>
       var splide = new Splide(".splide__ads__home", {
@@ -532,6 +544,22 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         var anio = new Date().getFullYear();
 
         id.textContent = anio;
+      });
+
+      $("#bg_vegas").vegas({
+        // overlay: false,
+        overlay: './imgs/overlays/07.png',
+        timer:false,
+        delay: 8000,
+        slidesToKeep: 1,
+        transition: "fade2",
+        transitionDuration: 5000,
+        animation: "random",
+        animationDuration: 8000,
+        slides: [
+          { src: "./imgs/wallpapers/wallpaper_contacto.jpg" },
+          { src: "./imgs/wallpapers/wallpaper_home_01.jpg" },
+        ],
       });
     </script>
   </body>
