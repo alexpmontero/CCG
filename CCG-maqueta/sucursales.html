@@ -77,15 +77,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </div>
           <div class="box_navbar">
             <div class="nav_contacts">
-              <a href="mailto:asistenteventas@ccgtab.com.mx" class="btn-light-x"
-                ><i class="ri-mail-fill"></i> asistenteventas@ccgtab.com.mx</a
+              <a href="mailto:asistenteventas@ccgtab.com.mx" class="link_email"
+                ><i class="ri-mail-fill"></i>
+                <span>asistenteventas@ccgtab.com.mx</span></a
               >
-              <a href="tel:+9931234567" class="btn-light-x"
-                ><i class="ri-phone-fill"></i> (993) 360 6749</a
+              <a href="tel:+9931234567" class="link_phone"
+                ><i class="ri-phone-fill"></i> <span>(993) 360 6749</span></a
               >
-              <a href="/" class="btn_primary"
-                ><i class="ri-map-pin-2-fill"></i> Encuentra nuestras
-                sucursales</a
+              <a href="/" class="btn_primary link_sucursales"
+                ><i class="ri-map-pin-2-fill"></i>
+                <span>Encuentra nuestras</span> sucursales</a
               >
               <span class="box_social">
                 <a href="#" target="_blank"
@@ -104,6 +105,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               </span>
             </div>
             <nav class="nav_menu">
+              <button
+                type="button"
+                class="btn btn_menu btn-sm"
+                data-bs-toggle="button"
+              >
+                <i class="ri-menu-3-line"></i>
+              </button>
               <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Nosotros</a></li>
@@ -116,6 +124,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </div>
         </div>
       </div>
+      <a href="#main" class="scroll-to-top" title="Volver arriba">↑</a>
     </header>
 
     <main class="wrapper_main page_sucursales">
@@ -126,7 +135,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         "
       >
         <div class="container-xl">
-          <div class="content_welcome">
+          <div class="content_welcome h_min">
             <h4 class="mb-0 fw-normal">
               Cooperativa de Consumo “Ganaderos” S.C.L.
             </h4>
@@ -135,10 +144,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </div>
       </section>
 
-      <section class="container_sucursales">
+      <section class="container_sucursales suc_in_page">
         <aside class="suc_aside_nav">
           <div class="nav_head">
-            <i class="ri-menu-2-line"></i>
+            <button class="btn_menu_sucursales" type="button">
+              <i class="ri-menu-2-line"></i>
+            </button>
             <h4 class="fw-semibold mb-0">Ubica nuestras sucursales</h4>
           </div>
           <div class="accordion" id="accordionSucursales">
@@ -161,10 +172,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 data-bs-parent="#accordionSucursales"
               >
                 <div class="accordion-body">
-                 <p>Lorem, ipsum.</p>
-                 <p>Lorem, ipsum.</p>
-                 <p>Lorem, ipsum.</p>
-                 <p>Lorem, ipsum.</p>
+                  <p>Lorem, ipsum.</p>
+                  <p>Lorem, ipsum.</p>
+                  <p>Lorem, ipsum.</p>
+                  <p>Lorem, ipsum.</p>
                 </div>
               </div>
             </div>
@@ -178,7 +189,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                 Chiapas
+                  Chiapas
                 </button>
               </h2>
               <div
@@ -186,12 +197,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 class="accordion-collapse collapse"
                 data-bs-parent="#accordionSucursales"
               >
-              <div class="accordion-body">
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-               </div>
+                <div class="accordion-body">
+                  <p>Lorem, ipsum.</p>
+                  <p>Lorem, ipsum.</p>
+                  <p>Lorem, ipsum.</p>
+                  <p>Lorem, ipsum.</p>
+                </div>
               </div>
             </div>
             <div class="accordion-item">
@@ -212,12 +223,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 class="accordion-collapse collapse"
                 data-bs-parent="#accordionSucursales"
               >
-              <div class="accordion-body">
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-               </div>
+                <div class="accordion-body">
+                  <p>Lorem, ipsum.</p>
+                  <p>Lorem, ipsum.</p>
+                  <p>Lorem, ipsum.</p>
+                  <p>Lorem, ipsum.</p>
+                </div>
               </div>
             </div>
           </div>
